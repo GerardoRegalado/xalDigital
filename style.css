@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+body{
+    font-family: 'Abel', sans-serif;
+}
+
+.principal-logo{
+
+    width: 30% ;
+   
+}
+
+#navMenu {
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+#navMenu > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: white;
+    margin-right: 10px;
+    z-index: 10;
+    
+
+}
+
+
+
+#Menu .navigation {
+    
+    display: none;
+} 
+
+#Menu .navigation.active {
+
+    
+    color: black;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    
+    
+}
+
+#navMenu > span:not(:last-child) {
+    margin-bottom: 7px;
+
+}
+
+#navMenu, #navMenu > span {
+
+    transition: all .1s ease-in-out; 
+    z-index: 10;
+}
+
+#navMenu.active {
+    transition-delay: 0.1s;
+    transform: rotate(45deg);
+    z-index: 12;
+    
+   
+    
+}
+
+
+
+#navMenu.active > span:nth-child(2){
+
+    width: 0;
+    z-index: 12;
+}
+
+#navMenu.active > span:nth-child(1),
+#navMenu.active > span:nth-child(3) {
+    transition-delay: .1s;
+    background-color: black;
+    z-index: 12;
+}
+
+#navMenu.active > span:nth-child(1) {
+    transform: translateY(9px);
+    background-color: black;
+    z-index: 12;
+
+}
+
+#navMenu.active > span:nth-child(3) {
+   
+    transform: translateY(-9px) rotate(90deg);
+    background-color: black;
+    z-index: 12;
+    
+}
+
+#Menu .navigation.active img {
+
+    display: flex;
+    justify-content: right;
+    margin-left: 1rem;
+}
+
+#Menu .navigation.active ul {
+
+    display: flex;
+    margin-top: 20px;
+    padding-left:10px ;
+   flex-direction: column;
+   list-style: none;
+}
+
+#Menu .navigation.active li {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+/* #Menu .navigation.active #bell {
+    display: flex;
+    margin-left: 12rem;
+    position: absolute;
+    margin-top: 15px ;
+    width: 3rem;
+    height: 3rem;
+} */
+
+
+section {
+
+    background-color: black;
+}
+
+section #prueba {
+
+    background-color: black;
+}
+
+
+#title {
+    color: yellowgreen;
+}
+
+
+
+/* Tarjeta  */
+
+.pan {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    color: black;
+    background-color: #fff;
+    font-size: 16px;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+.pan .left {
+
+    position: absolute;
+    margin-left: 10%;
+   
+}
+
+.pan .right {
+    
+    position: absolute;
+    margin-left: 70%;
+}
+
+#card {
+
+    margin-top: 1rem;
+    
+    
+    
+}
+
+#card .card-header {
+    
+    text-align: left;
+    
+    
+}
+
+#row1  {
+    position: absolute;
+    margin-left: 11rem;
+    cursor: pointer;
+}
+#row2 {
+
+    position: absolute;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+#row3 {
+
+    position: absolute;
+    margin-left: 10.5rem;
+    cursor: pointer;
+}
+
+
+#card .card-body-1{
+    display: none;
+}
+
+#card .card-body-1.active {
+
+    display: initial;
+   
+}
+
+
+#card .card-body-2{
+    display: none;
+}
+
+#card .card-body-2.active {
+
+    display: initial;
+   
+}
+
+#card .card-body-3{
+    display: none;
+}
+
+#card .card-body-3.active {
+
+    display: initial;
+   
+}
+
+footer {
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.lastCards {
+    margin: 5px;
+    position: relative;
+    display: flex;
+}
+
+.contenedor {
+   width:33.33%;
+   display: flex;
+   background-color: #121212;
+   margin: 5px;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contenedor:hover{
+    transform: translateY(-30%);
+}
+
+.contenedor img {
+    border: #fff;
+    align-items: center;
+}
